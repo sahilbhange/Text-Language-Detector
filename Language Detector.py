@@ -32,7 +32,7 @@ file.write(','.join(header) + '\n')
 
 for i in range(len(lines)):
     str=lines[i]
-    result = translate_client.detect_language(str)
+    result = translate_client.detect_language(str)  # Call Google language translator porgram
     input_str = format(result['input'])
     confidence = format(result['confidence'])
     str_lang = format(result['language'])
